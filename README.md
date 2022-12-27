@@ -1,2 +1,2 @@
 # yu-java
-yu-java
+How to Program Java like Java
