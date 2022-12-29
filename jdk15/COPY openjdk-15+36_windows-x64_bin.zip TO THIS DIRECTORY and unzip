@@ -1,0 +1,1 @@
+COPY openjdk-15+36_windows-x64_bin.zip TO THIS DIRECTORY and unzip
