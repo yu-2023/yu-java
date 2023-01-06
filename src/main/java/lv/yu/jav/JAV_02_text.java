@@ -5,7 +5,7 @@
  * 
  * Java program     JAV_02_text.java     Apache License 2.0
  *      
- * Copyright (c)    Yuri Utkin 2023     mob.+371 12345678     https://www.jago.lv
+ * Copyright (c)    Yuri Utkin 2023      mob.+371 12345678     https://www.jago.lv
  * 
  */
 package lv.yu.jav;
