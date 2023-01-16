@@ -56,6 +56,8 @@ public JAV_03_menu() {
         
         frame.setIconImage(icon_frame.getImage());
         
+        frame.setLayout(new BorderLayout());
+        
         frame.setVisible(true);
 
 //------------------------------
@@ -111,7 +113,7 @@ public JAV_03_menu() {
         menu_Menu.setToolTipText("Menu commands");    
           item_Start.setToolTipText("Start application");
           item_Load.setToolTipText("Load application");
-          item_Xxxx.setToolTipText("Xxxxx application");          
+          item_Xxxx.setToolTipText("Xxxx application");          
           item_Start.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.ALT_MASK));  //  Alt S
           item_Load.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, ActionEvent.ALT_MASK));   //  Alt L
           item_Xxxx.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.ALT_MASK));   //  Alt X  

@@ -13,6 +13,7 @@ package lv.yu.jav;
 import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 //------------------------------
@@ -44,6 +45,8 @@ public JAV_01_frame() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         frame.setIconImage(icon_frame.getImage());  
+        
+        frame.setLayout(new BorderLayout());
         
         frame.setVisible(true);
 
