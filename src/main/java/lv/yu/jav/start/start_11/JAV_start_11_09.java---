@@ -1,0 +1,51 @@
+
+//  https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html
+
+package lv.yu.jav.start.start_11;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
+
+import javax.swing.*;
+
+/**
+ * The Example class provides ...
+ */
+public final class JAV_start_11_09 {
+
+/**
+ * The Example class provides ...
+ */
+    public static JInternalFrame JInternalFrame_start_11;
+
+/**
+ * The Example class provides ...
+ */
+	public static JTabbedPane JTabbedPane_start_11 = new JTabbedPane();
+           
+/**
+ * The Example class provides ...
+ */
+    public JAV_start_11_09() { 
+    	
+    	JTabbedPane_start_11.removeAll();
+    	
+//        new JAV_start_11_about_09();
+//        new JAV_start_11_help_09();
+
+//      JTabbedPane_start_11.setTab
+        JTabbedPane_start_11.setTabPlacement(SwingConstants.BOTTOM);  //  JTabbedPane.TOP BOTTOM LEFT RIGHT
+        JTabbedPane_start_11.setTabLayoutPolicy(JTabbedPane_start_11.SCROLL_TAB_LAYOUT);
+//                                                         resizible  closable  maximizable  iconifable        
+    	JInternalFrame_start_11 = new JInternalFrame("11 START", true, false, true, true);  //  true, false, true, true
+//    	JInternalFrame_start_11.set  //  setResizable(false);  //  setClosable(false);  //  setMaximizable(false);  //  .setIconifiable(false);
+    	JInternalFrame_start_11.setLayout(new BorderLayout());
+    	JInternalFrame_start_11.setBackground(Color.GRAY);
+       	JInternalFrame_start_11.setVisible(true);  //  OBLIGATI  !!!
+        
+        JInternalFrame_start_11.add(JTabbedPane_start_11, BorderLayout.CENTER);  
+        
+    }  //  end JAV_start_11_09()
+   
+}  //  end JAV_start_11_09
+
