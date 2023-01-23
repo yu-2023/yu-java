@@ -1,0 +1,49 @@
+
+//  https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html
+
+package lv.yu.jav.load.load_22;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
+
+import javax.swing.*;
+
+/**
+ * The Example class provides ...
+ */
+public final class JAV_load_22_10 {
+	
+/**
+ * The Example class provides ...
+ */
+    public static JInternalFrame JInternalFrame_load_22;	
+
+/**
+ * The Example class provides ...
+ */
+	public static JTabbedPane JTabbedPane_load_22 = new JTabbedPane();
+           
+/**
+ * The Example class provides ...
+ */
+    public JAV_load_22_10() { 
+                                
+    	JTabbedPane_load_22.removeAll();
+    	
+        new JAV_load_22_about_10();
+        new JAV_load_22_help_10();
+
+        JTabbedPane_load_22.setTabPlacement(SwingConstants.BOTTOM);
+        JTabbedPane_load_22.setTabLayoutPolicy(JTabbedPane_load_22.SCROLL_TAB_LAYOUT);
+        
+        JInternalFrame_load_22 = new JInternalFrame("22 LOAD LOAD LOAD", true, false, true, true);  //  true, false, true, true
+        JInternalFrame_load_22.setLayout(new BorderLayout());
+        JInternalFrame_load_22.setBackground(Color.GRAY);
+        JInternalFrame_load_22.setVisible(true);  //  OBLIGATI  !!!
+
+        JInternalFrame_load_22.add(JTabbedPane_load_22, BorderLayout.CENTER);
+               
+    }  //  end JAV_load_22_10()
+   
+}  //  end JAV_load_22_10
+

@@ -1,0 +1,57 @@
+
+//  https://stackoverflow.com/questions/9862165/jmenu-actionlistener
+//  http://www.java2s.com/Tutorial/Java/0240__Swing/ListeningtoJMenuItemEventswithanActionListener.htm
+
+package lv.yu.jav.start;  //  JAV_start_menu_start.java
+
+//import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+//import java.awt.event.KeyEvent;
+import java.awt.event.KeyEvent;
+
+import javax.swing.*;
+
+/**
+ * The Example class provides ...
+ */
+public class JAV_start_menu_start_09 {
+	
+//	public static JMenu menu_Menu = new JMenu();
+	
+/**
+ * The Example class provides ...
+ */
+    public JAV_start_menu_start_09() {
+
+//------------------------------
+    	
+    var icon_Start = new ImageIcon( getClass().getResource("/lv/yu/jav/JAV_resources/start.gif") );
+    
+//------------------------------
+      
+//      lv.yu.jav.JAV.menubar = new JMenuBar();
+      
+//      new lv.yu.jav.start.JAV_start_menu();
+	
+      var item_Start = new JMenuItem("Start", icon_Start);
+          item_Start.setToolTipText("Start application");
+          item_Start.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.ALT_MASK));  //  Alt S
+ 
+//------------------------------
+            
+          item_Start.addActionListener(new ActionListener() {
+	          public void actionPerformed(ActionEvent e) { new lv.yu.jav.start.JAV_start_visualize_09(); } } ); 
+
+//------------------------------
+            
+        lv.yu.jav.start.JAV_start_menu_09.menu_Menu.add(item_Start);
+
+        lv.yu.jav.JAV_09_internal_frames_change.menubar.add(lv.yu.jav.start.JAV_start_menu_09.menu_Menu);
+       
+//------------------------------
+            
+    }  //  end JAV_start_menu_start_09()
+   
+}  //  end JAV_start_menu_start_09
+

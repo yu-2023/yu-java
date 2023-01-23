@@ -1,0 +1,57 @@
+
+//  https://stackoverflow.com/questions/9862165/jmenu-actionlistener
+//  http://www.java2s.com/Tutorial/Java/0240__Swing/ListeningtoJMenuItemEventswithanActionListener.htm
+
+package lv.yu.jav.load;  //  JAV_load_menu_start.java
+
+//import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+//import java.awt.event.KeyEvent;
+import java.awt.event.KeyEvent;
+
+import javax.swing.*;
+
+/**
+ * The Example class provides ...
+ */
+public class JAV_load_menu_start_09 {
+	
+//	public static JMenu menu_Menu = new JMenu();
+	
+/**
+ * The Example class provides ...
+ */
+    public JAV_load_menu_start_09() {
+
+//------------------------------
+    	
+    var icon_Load = new ImageIcon( getClass().getResource("/lv/yu/jav/JAV_resources/load.gif") );
+
+//------------------------------
+      
+//      lv.yu.jav.JAV.menubar = new JMenuBar();
+      
+//      new lv.yu.jav.start.JAV_start_menu();
+	
+        var item_Load = new JMenuItem("Load", icon_Load);
+            item_Load.setToolTipText("Load application");
+            item_Load.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, ActionEvent.ALT_MASK));   //  Alt L
+ 
+//------------------------------
+            
+            item_Load.addActionListener(new ActionListener() {
+	            public void actionPerformed(ActionEvent e) { new lv.yu.jav.load.JAV_load_visualize_09(); } } );
+
+//------------------------------
+            
+        lv.yu.jav.start.JAV_start_menu_09.menu_Menu.add(item_Load);
+
+        lv.yu.jav.JAV_09_internal_frames_change.menubar.add(lv.yu.jav.start.JAV_start_menu_09.menu_Menu);
+            
+//------------------------------
+       
+    }  //  end JAV_load_menu_start_09()
+   
+}  //  end JAV_load_menu_start_09
+

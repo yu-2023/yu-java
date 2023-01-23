@@ -1,0 +1,48 @@
+
+//  https://stackoverflow.com/questions/9862165/jmenu-actionlistener
+//  http://www.java2s.com/Tutorial/Java/0240__Swing/ListeningtoJMenuItemEventswithanActionListener.htm
+
+package lv.yu.jav.help;  //  JAV_help_menu_help_1.java
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+
+/**
+ * The Example class provides ...
+ */
+public class JAV_help_menu_help_1_09 {
+	
+/**
+ * The Example class provides ...
+ */
+    public JAV_help_menu_help_1_09() {
+
+//        var icon_He11 = new ImageIcon( getClass().getResource("/resources/rename.png") );  //  https://docs.oracle.com/javase/tutorial/uiswing/components/icon.html
+//        var icon_He12 = new ImageIcon( getClass().getResource("/resources/Open16.gif") );        
+	
+        var menu_Help_1 = new JMenu("Help1");
+            menu_Help_1.setMnemonic(KeyEvent.VK_1);  //  ALT 1
+            menu_Help_1.setToolTipText("Help1 commands");    
+            
+        var menuitem_He11 = new JMenuItem("He11");  //  , icon_He11);  //  https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html
+            menuitem_He11.setToolTipText("He11 application");
+            menuitem_He11.addActionListener(new ActionListener() {
+	            public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+            menu_Help_1.add(menuitem_He11);
+
+        var menuitem_He12 = new JMenuItem("He12");  //  , icon_He12);
+            menuitem_He12.setToolTipText("He12 application");
+            menuitem_He12.addActionListener(new ActionListener() {
+            	public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+            menu_Help_1.add(menuitem_He12);
+
+            lv.yu.jav.JAV_09_internal_frames_change.menubar.add(menu_Help_1);       
+
+    }  //  end JAV_help_menu_help_1_09()
+   
+}  //  end JAV_help_menu_help_1_09
+

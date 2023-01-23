@@ -1,0 +1,47 @@
+
+//  https://stackoverflow.com/questions/9862165/jmenu-actionlistener
+//  http://www.java2s.com/Tutorial/Java/0240__Swing/ListeningtoJMenuItemEventswithanActionListener.htm
+
+package lv.yu.jav.load;  //  JAV_load_menu_load_1.java
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.*;
+
+/**
+ * The Example class provides ...
+ */
+public class JAV_load_menu_load_1_09 {
+	
+/**
+ * The Example class provides ...
+ */
+    public JAV_load_menu_load_1_09() {
+
+//        var icon_Lo11 = new ImageIcon( getClass().getResource("/resources/rename.png") );  //  https://docs.oracle.com/javase/tutorial/uiswing/components/icon.html
+//        var icon_Lo12 = new ImageIcon( getClass().getResource("/resources/Open16.gif") );        
+	
+        var menu_Load_1 = new JMenu("Load1");
+            menu_Load_1.setMnemonic(KeyEvent.VK_1);  //  ALT 1
+            menu_Load_1.setToolTipText("Load1 commands");    
+            
+        var menuitem_Lo11 = new JMenuItem("Lo11");  //  , icon_Lo11);  //  https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html
+            menuitem_Lo11.setToolTipText("Lo11 application");
+            menuitem_Lo11.addActionListener(new ActionListener() {
+	            public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+            menu_Load_1.add(menuitem_Lo11);
+
+        var menuitem_Lo12 = new JMenuItem("Lo12");  //  , icon_Lo12);
+            menuitem_Lo12.setToolTipText("Lo12 application");
+            menuitem_Lo12.addActionListener(new ActionListener() {
+            	public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+            menu_Load_1.add(menuitem_Lo12);
+
+            lv.yu.jav.JAV_09_internal_frames_change.menubar.add(menu_Load_1);
+
+    }  //  end JAV_load_menu_load_1_09()
+   
+}  //  end JAV_load_menu_load_1_09
+

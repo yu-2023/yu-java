@@ -1,0 +1,28 @@
+
+package lv.yu.jav.lang;  //  JAV_lang_visualize_10.java
+
+import java.awt.BorderLayout;
+
+/**
+ * The Example class provides ...
+ */
+public class JAV_lang_visualize_10 {
+	
+/**
+ * The Example class provides ...
+ */
+    public JAV_lang_visualize_10() {
+
+//--------------------------------------------------    	
+    	
+    	new lv.yu.jav.lang.JAV_lang_10();
+//		lv.yu.jav.JAV.frame.setJMenuBar(lv.yu.jav.JAV.menubar);  //  nevajag, ir ieks menu_start
+		     		
+//--------------------------------------------------          
+			            		
+		lv.yu.jav.JAV_10_tabs.frame.setVisible(true); 
+
+    }  //  end JAV_lang_visualize_10()
+   
+}  //  end JAV_lang_visualize_10
+

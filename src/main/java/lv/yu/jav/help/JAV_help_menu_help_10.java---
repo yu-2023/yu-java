@@ -1,0 +1,67 @@
+
+//  https://stackoverflow.com/questions/9862165/jmenu-actionlistener
+//  http://www.java2s.com/Tutorial/Java/0240__Swing/ListeningtoJMenuItemEventswithanActionListener.htm
+
+package lv.yu.jav.help;  //  JAV_help_menu_help.java
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+
+/**
+ * The Example class provides ...
+ */
+public class JAV_help_menu_help_10 {
+	
+/**
+ * The Example class provides ...
+ */
+    public JAV_help_menu_help_10() {
+
+//------------------------------
+    	
+    var icon_Information = new ImageIcon( getClass().getResource("/lv/yu/jav/JAV_resources/information.gif") );  //  https://docs.oracle.com/javase/tutorial/uiswing/components/icon.html
+    var icon_Help        = new ImageIcon( getClass().getResource("/lv/yu/jav/JAV_resources/help.png") );
+    var icon_About       = new ImageIcon( getClass().getResource("/lv/yu/jav/JAV_resources/about.gif") );            	
+	
+//------------------------------
+        
+    var menu_Help = new JMenu("Help");
+        menu_Help.setMnemonic(KeyEvent.VK_H);  //  ALT H
+        menu_Help.setToolTipText("Help commands");         
+      var item_Information = new JMenuItem("Information", icon_Information);  //  Information  //  information.gif  //  Settings  //  settings.png
+          item_Information.setToolTipText("Information application");
+      var item_Help = new JMenuItem("Help", icon_Help);  //  https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html
+          item_Help.setToolTipText("Help application");            
+      var item_About = new JMenuItem("About", icon_About);
+          item_About.setToolTipText("About application");
+            
+//------------------------------
+              
+          item_Information.addActionListener(new ActionListener() {
+              public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );              
+              
+          item_Help.addActionListener(new ActionListener() {
+              public void actionPerformed(ActionEvent e) { new lv.yu.jav.help.JAV_help_visualize_10(); } } );
+
+          item_About.addActionListener(new ActionListener() {
+           	  public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+  
+//------------------------------
+              
+            menu_Help.add(item_Information);
+            menu_Help.add(item_Help);            
+            menu_Help.add(item_About);
+            
+            lv.yu.jav.JAV_10_tabs.menubar.add(menu_Help);       
+            
+//------------------------------
+
+    }  //  end JAV_help_menu_help_10()
+   
+}  //  end JAV_help_menu_help_10
+
