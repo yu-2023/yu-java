@@ -22,11 +22,11 @@ public class JAV_lang_visualize_08 {
 
 //--------------------------------------------------    	
     	
-    	new lv.yu.jav.lang.JAV_lang_08();
+        new lv.yu.jav.lang.JAV_lang_08();
 		     		
 //--------------------------------------------------          
 			            		
-		lv.yu.jav.JAV_08_internal_frames.frame.setVisible(true); 
+        lv.yu.jav.JAV_08_internal_frames.frame.setVisible(true); 
 
     }  //  end JAV_lang_visualize_08()
    
