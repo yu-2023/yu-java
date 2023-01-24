@@ -41,7 +41,7 @@ public class JAV_xxxxx_menu_start_08 {
 //------------------------------
           
           item_Xxxx.addActionListener(new ActionListener() {
-	          public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+              public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
 
 //------------------------------
             
