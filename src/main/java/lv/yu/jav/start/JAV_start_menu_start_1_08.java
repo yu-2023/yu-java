@@ -34,7 +34,7 @@ public class JAV_start_menu_start_1_08 {
         var menuitem_St11 = new JMenuItem("St11");
             menuitem_St11.setToolTipText("St11 application");
             menuitem_St11.addActionListener(new ActionListener() {
-	        public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
             menu_Start_1.add(menuitem_St11);
 
         var menuitem_St12 = new JMenuItem("St12");
