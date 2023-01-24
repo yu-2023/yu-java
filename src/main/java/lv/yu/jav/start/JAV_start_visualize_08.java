@@ -88,7 +88,7 @@ public class JAV_start_visualize_08 {
 
 //--------------------------------------------------          
 			            		
-		lv.yu.jav.JAV_08_internal_frames.frame.setVisible(true); 
+        lv.yu.jav.JAV_08_internal_frames.frame.setVisible(true); 
 
     }  //  end JAV_start_visualize_08()
    
