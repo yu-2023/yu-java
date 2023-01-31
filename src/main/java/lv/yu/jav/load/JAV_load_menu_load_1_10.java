@@ -34,13 +34,13 @@ public class JAV_load_menu_load_1_10 {
         var menuitem_Lo11 = new JMenuItem("Lo11");
             menuitem_Lo11.setToolTipText("Lo11 application");
             menuitem_Lo11.addActionListener(new ActionListener() {
-	            public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
             menu_Load_1.add(menuitem_Lo11);
 
         var menuitem_Lo12 = new JMenuItem("Lo12");
             menuitem_Lo12.setToolTipText("Lo12 application");
             menuitem_Lo12.addActionListener(new ActionListener() {
-            	public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
             menu_Load_1.add(menuitem_Lo12);
 
             lv.yu.jav.JAV_10_tabs.menubar.add(menu_Load_1);
