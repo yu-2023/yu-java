@@ -24,7 +24,7 @@ public class JAV_load_visualize_09 {
 
 //-------------------------------------------------- 
     	
-	new lv.yu.jav.load.JAV_load_09();
+    new lv.yu.jav.load.JAV_load_09();
 		
 //--------------------------------------------------        
 
@@ -76,7 +76,7 @@ public class JAV_load_visualize_09 {
     
 //--------------------------------------------------
     
-	    lv.yu.jav.JAV_09_internal_frames_change.frame.setVisible(true);
+        lv.yu.jav.JAV_09_internal_frames_change.frame.setVisible(true);
 
     }  //  end JAV_load_visualize_09()
    
