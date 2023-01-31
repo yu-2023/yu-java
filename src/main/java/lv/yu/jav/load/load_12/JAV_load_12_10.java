@@ -40,7 +40,7 @@ public final class JAV_load_12_10 {
     	JTabbedPane_load_12 = new JTabbedPane();
     	JTabbedPane_load_12.removeAll();
     	
-	    new JAV_load_12_about_10();
+        new JAV_load_12_about_10();
         new JAV_load_12_help_10();
 
         JTabbedPane_load_12.setTabPlacement(SwingConstants.BOTTOM);
