@@ -24,7 +24,7 @@ import java.awt.EventQueue;
 public final class JAV_02_text {
 	
     /** frame */
-    public static JFrame frame;	
+    public static JFrame frame = new JFrame();
 	
 //------------------------------
   
@@ -37,8 +37,6 @@ public JAV_02_text() {
 //------------------------------    	
     	
     var title = "JAVA -- JAV_02_text -- v. 2023.01.01";
-    
-        frame = new JFrame();
         
         frame.setTitle("     " + title);
 

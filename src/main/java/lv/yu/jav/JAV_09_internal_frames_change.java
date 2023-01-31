@@ -3,9 +3,9 @@
  * 
  * Java package     lv.yu.jav
  * 
- * Java program     JAV_08_internal_frames.java     Apache License 2.0
+ * Java program     JAV_09_internal_frames_change.java     Apache License 2.0
  *      
- * Copyright (c)    Yuri Utkin 2023                 mob.+371 12345678     https://www.jago.lv
+ * Copyright (c)    Yuri Utkin 2022                        mob.+371 12345678     https://www.jago.lv
  * 
  */
 package lv.yu.jav;
@@ -24,8 +24,8 @@ import java.awt.EventQueue;
 
 //------------------------------
 
-/** JAV_08_internal_frames */
-public final class JAV_08_internal_frames {
+/** JAV_09_internal_frames_change */
+public final class JAV_09_internal_frames_change {
     		
     /** frame */
     public static JFrame frame = new JFrame();
@@ -44,7 +44,7 @@ public final class JAV_08_internal_frames {
     
     /** label_info */
     public static JLabel label_info = new JLabel();
-
+    
     /** desktoppane_11 */
     public static JDesktopPane desktoppane_11 = new JDesktopPane();
   
@@ -65,19 +65,19 @@ public final class JAV_08_internal_frames {
 
 //------------------------------
     
-/** JAV_08_internal_frames demonstrates many Java Internal Frames in Java Frame */
-public JAV_08_internal_frames() {
+/** JAV_09_internal_frames_change demonstrates Java Internal Frames reload in Java Frame */
+public JAV_09_internal_frames_change() {
 
-    var imgURL     =               JAV_08_internal_frames.class.getResource("/lv/yu/jav/JAV_resources/JAV.jpg");
-    var icon_frame = new ImageIcon(JAV_08_internal_frames.class.getResource("/lv/yu/jav/JAV_resources/JAV.jpg"));
+    var imgURL     =               JAV_09_internal_frames_change.class.getResource("/lv/yu/jav/JAV_resources/JAV.jpg");
+    var icon_frame = new ImageIcon(JAV_09_internal_frames_change.class.getResource("/lv/yu/jav/JAV_resources/JAV.jpg"));
 
 //------------------------------            
     	
-        var title = "JAVA -- JAV_08_internal_frames -- v. 2023.01.01";
+        var title = "JAVA -- JAV_09_internal_frames_change -- v. 2023.01.01";
             
         frame.setTitle("     " + title);
         
-        frame.setBounds(10+7*40, 10+7*40, 1000, 600);
+        frame.setBounds(10+8*40, 10+8*40, 1000, 600);
          
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
           
@@ -110,7 +110,7 @@ public JAV_08_internal_frames() {
         frame.getContentPane().add(panel_1, BorderLayout.NORTH);
         frame.getContentPane().add(panel_2, BorderLayout.CENTER);
         frame.getContentPane().add(panel_3, BorderLayout.SOUTH);
-                     
+                   
 //------------------------------
         
         desktoppane_11.setLayout(new BorderLayout());
@@ -139,29 +139,29 @@ public JAV_08_internal_frames() {
             
 //--------------------------------------------------
         	
-        new lv.yu.jav.start.JAV_start_visualize_08();
+        new lv.yu.jav.start.JAV_start_visualize_09();
            
 //------------------------------         
 
         frame.setVisible(true);
-        
+                                
 //------------------------------                
                 
-    }  //  end JAV_08_internal_frames()
+    }  //  end JAV_09_internal_frames_change()
     
 //------------------------------    
     
 /**
- * JAV_08_internal_frames
+ * JAV_09_internal_frames_change
  * 
  * @param args[]
  */    
 public static void main(String[] args) {
-                                         EventQueue.invokeLater( () -> { new JAV_08_internal_frames(); } );
+                                         EventQueue.invokeLater( () -> { new JAV_09_internal_frames_change(); } );
 }  //  end main()
 
 //------------------------------ 
     
-}  //  end JAV_08_internal_frames
+}  //  end JAV_09_internal_frames_change
 
 //------------------------------

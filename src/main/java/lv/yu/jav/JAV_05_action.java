@@ -33,7 +33,10 @@ import java.awt.event.ActionListener;
 public final class JAV_05_action {
      
     /** frame */
-    public static JFrame frame;	
+    public static JFrame frame = new JFrame();
+    
+    /** manubar */
+    public static JMenuBar menubar = new JMenuBar();
 	
 //------------------------------
 
@@ -46,8 +49,6 @@ public JAV_05_action() {
 //------------------------------            
     	
         var title = "JAVA -- JAV_05_action -- v. 2023.01.01";
-    
-        frame = new JFrame();
   
         frame.setTitle("     " + title);
         
@@ -75,9 +76,7 @@ public JAV_05_action() {
     var icon_Exit        = new ImageIcon(JAV_05_action.class.getResource("/lv/yu/jav/JAV_resources/exit.png"));
         
 //------------------------------
-    
-    var menubar = new JMenuBar();
-        
+
     var menu_Menu = new JMenu("Menu");   
       var item_Start = new JMenuItem("Start", icon_Start);
       var item_Load  = new JMenuItem("Load", icon_Load);
@@ -235,6 +234,8 @@ public JAV_05_action() {
         
         menubar.setLayout( new lv.yu.jav.JAV_LIB_wrap_layout (lv.yu.jav.JAV_LIB_wrap_layout.LEFT, 0, 0) );
 
+//------------------------------
+        
         frame.setJMenuBar(menubar);
 
 //------------------------------

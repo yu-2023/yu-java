@@ -38,16 +38,19 @@ import java.awt.event.ActionListener;
 public final class JAV_06_internal_frame_one {
      
     /** frame */
-    public static JFrame frame;	
+    public static JFrame frame = new JFrame();
     
     /** manubar */
-    public static JMenuBar menubar;
+    public static JMenuBar menubar = new JMenuBar();
     
     /** panel_1 */    
     public static JPanel panel_1 = new JPanel();
 
     /** panel_3 */
     public static JPanel panel_3 = new JPanel(); 
+    
+    /** label_info */
+    public static JLabel label_info = new JLabel();
     
     /** desktoppane_12 */
     public static JDesktopPane desktoppane_12 = new JDesktopPane();
@@ -66,8 +69,6 @@ public JAV_06_internal_frame_one() {
 //------------------------------            
     	
         var title = "JAVA -- JAV_06_internal_frame_one -- v. 2023.01.01";
-    
-        frame = new JFrame();
 
         frame.setTitle("     " + title);
         
@@ -95,8 +96,6 @@ public JAV_06_internal_frame_one() {
     var icon_Exit        = new ImageIcon(JAV_06_internal_frame_one.class.getResource("/lv/yu/jav/JAV_resources/exit.png"));
         
 //------------------------------
-    
-    var menubar = new JMenuBar();
         
     var menu_Menu = new JMenu("Menu");
       var item_Start = new JMenuItem("Start", icon_Start);
@@ -255,6 +254,8 @@ public JAV_06_internal_frame_one() {
         
         menubar.setLayout( new lv.yu.jav.JAV_LIB_wrap_layout (lv.yu.jav.JAV_LIB_wrap_layout.LEFT, 0, 0) );
         
+//------------------------------
+        
         frame.setJMenuBar(menubar);
         
 //------------------------------
@@ -264,8 +265,7 @@ public JAV_06_internal_frame_one() {
         
         panel_3.setLayout(new BorderLayout());
         panel_3.setBackground(Color.lightGray);
-        
-    var label_info = new JLabel();
+
         label_info.setText("     Copyright     (c)     Yuri Utkin 2023     mob.+371 12345678     https://www.jago.lv");
         label_info.setForeground(Color.BLACK);
         
@@ -292,7 +292,9 @@ public JAV_06_internal_frame_one() {
         desktoppane_12.add(internalframe_start_12, BorderLayout.CENTER);
            
         panel_1.add(desktoppane_12, BorderLayout.CENTER);
-        
+  
+//------------------------------ 
+
         frame.setVisible(true);
         
 //------------------------------ 

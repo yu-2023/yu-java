@@ -22,7 +22,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JCheckBoxMenuItem;
 import javax.swing.KeyStroke;
 
-import java.awt.Toolkit;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.BorderLayout;
@@ -38,10 +37,10 @@ import java.awt.event.ActionListener;
 public final class JAV_07_internal_frame_six {
      
     /** frame */
-    public static JFrame frame;	
+    public static JFrame frame = new JFrame();
     
     /** manubar */
-    public static JMenuBar menubar;
+    public static JMenuBar menubar = new JMenuBar();
     
     /** panel_1 */    
     public static JPanel panel_1 = new JPanel();
@@ -51,6 +50,9 @@ public final class JAV_07_internal_frame_six {
     
     /** panel_3 */
     public static JPanel panel_3 = new JPanel(); 
+    
+    /** label_info */
+    public static JLabel label_info = new JLabel();
     
     /** desktoppane_11 */
     public static JDesktopPane desktoppane_11 = new JDesktopPane();
@@ -99,8 +101,6 @@ public JAV_07_internal_frame_six() {
 //------------------------------            
     	
         var title = "JAVA -- JAV_07_internal_frame_six -- v. 2023.01.01";
-    
-        frame = new JFrame();
 
         frame.setTitle("     " + title);
         
@@ -128,8 +128,6 @@ public JAV_07_internal_frame_six() {
     var icon_Exit        = new ImageIcon(JAV_07_internal_frame_six.class.getResource("/lv/yu/jav/JAV_resources/exit.png"));
         
 //------------------------------
-    
-    var menubar = new JMenuBar();
         
     var menu_Menu = new JMenu("Menu");
       var item_Start = new JMenuItem("Start", icon_Start);
@@ -288,6 +286,8 @@ public JAV_07_internal_frame_six() {
         
         menubar.setLayout( new lv.yu.jav.JAV_LIB_wrap_layout (lv.yu.jav.JAV_LIB_wrap_layout.LEFT, 0, 0) );
 
+//------------------------------
+        
         frame.setJMenuBar(menubar);
         
 //------------------------------
@@ -300,8 +300,7 @@ public JAV_07_internal_frame_six() {
 
         panel_3.setLayout(new BorderLayout());
         panel_3.setBackground(Color.lightGray);
-        
-    var label_info = new JLabel();
+
         label_info.setText("     Copyright     (c)     Yuri Utkin 2023     mob.+371 12345678     https://www.jago.lv");
         label_info.setForeground(Color.BLACK);
         
@@ -385,6 +384,8 @@ public JAV_07_internal_frame_six() {
         panel_2.add(desktoppane_22, BorderLayout.CENTER);
         panel_2.add(desktoppane_23, BorderLayout.EAST);
         
+//------------------------------ 
+        
         frame.setVisible(true);
         
 //------------------------------ 
@@ -398,9 +399,9 @@ public JAV_07_internal_frame_six() {
  * 
  * @param args[]
  */    
-    public static void main(String[] args) {
-                                             EventQueue.invokeLater( () -> { new JAV_07_internal_frame_six(); } );
-    }
+public static void main(String[] args) {
+                                         EventQueue.invokeLater( () -> { new JAV_07_internal_frame_six(); } );
+}  //  end main()
 
 //------------------------------ 
     

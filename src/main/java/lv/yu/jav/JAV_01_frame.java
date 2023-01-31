@@ -22,7 +22,7 @@ import java.awt.EventQueue;
 public final class JAV_01_frame {
 	
     /** frame */
-    public static JFrame frame;	
+    public static JFrame frame = new JFrame();	
 	
 //------------------------------
         
@@ -35,8 +35,6 @@ public JAV_01_frame() {
 //------------------------------
     
     var title = "JAVA -- JAV_01_frame -- v. 2023.01.01";
-    
-        frame = new JFrame();
         
         frame.setTitle("     " + title);
         
@@ -49,6 +47,18 @@ public JAV_01_frame() {
         frame.setLayout(new BorderLayout());
         
         frame.setVisible(true);
+
+//------------------------------
+        
+    new lv.yu.jav.JAV_02_text();
+    new lv.yu.jav.JAV_03_menu();
+    new lv.yu.jav.JAV_04_menu_wrap();
+    new lv.yu.jav.JAV_05_action();
+    new lv.yu.jav.JAV_06_internal_frame_one();
+    new lv.yu.jav.JAV_07_internal_frame_six();
+    new lv.yu.jav.JAV_08_internal_frames();
+    new lv.yu.jav.JAV_09_internal_frames_change();
+    new lv.yu.jav.JAV_10_tabs();
 
 //------------------------------
         

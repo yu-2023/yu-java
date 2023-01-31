@@ -32,7 +32,10 @@ import java.awt.event.ActionEvent;
 public final class JAV_03_menu {
 	
     /** frame */
-    public static JFrame frame;	
+    public static JFrame frame = new JFrame();
+    
+    /** manubar */
+    public static JMenuBar menubar = new JMenuBar();
 	
 //------------------------------	
 
@@ -45,8 +48,6 @@ public JAV_03_menu() {
 //------------------------------            
 
     var title = "JAVA -- JAV_03_menu -- v. 2023.01.01";
-    
-        frame = new JFrame();
         
         frame.setTitle("     " + title);
         
@@ -74,8 +75,6 @@ public JAV_03_menu() {
     var icon_Exit        = new ImageIcon(JAV_03_menu.class.getResource("/lv/yu/jav/JAV_resources/exit.png"));
         
 //------------------------------
-    
-    var menubar = new JMenuBar();
         
     var menu_Menu = new JMenu("Menu"); 
       var item_Start = new JMenuItem("Start", icon_Start);
@@ -182,6 +181,8 @@ public JAV_03_menu() {
         menubar.add(menu_Help);
         menubar.add(menu_Lang);
         menubar.add(menu_Exit);
+        
+//------------------------------
         
         frame.setJMenuBar(menubar);
 
