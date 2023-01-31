@@ -41,7 +41,7 @@ public final class JAV_load_23_10 {
     	JTabbedPane_load_23.removeAll();
     	
         new JAV_load_23_about_10();
-	    new JAV_load_23_help_10();
+        new JAV_load_23_help_10();
 
         JTabbedPane_load_23.setTabPlacement(SwingConstants.BOTTOM);
         JTabbedPane_load_23.setTabLayoutPolicy(JTabbedPane_load_23.SCROLL_TAB_LAYOUT);
