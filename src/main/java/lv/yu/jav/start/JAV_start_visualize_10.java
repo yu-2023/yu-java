@@ -88,7 +88,7 @@ public class JAV_start_visualize_10 {
 
 //--------------------------------------------------          
 			            		
-		lv.yu.jav.JAV_10_tabs.frame.setVisible(true); 
+        lv.yu.jav.JAV_10_tabs.frame.setVisible(true); 
 
     }  //  end JAV_start_visualize_10()
    
