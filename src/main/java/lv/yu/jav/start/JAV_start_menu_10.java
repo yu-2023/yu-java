@@ -20,8 +20,8 @@ import java.awt.event.KeyEvent;
  */
 public class JAV_start_menu_10 {
 	
-	/** menu_Menu */
-	public static JMenu menu_Menu = new JMenu();
+/** menu_Menu */
+public static JMenu menu_Menu = new JMenu();
 	
 /**
  * JAV_start_menu_10
