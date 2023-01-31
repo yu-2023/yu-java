@@ -26,7 +26,7 @@ public class JAV_lang_visualize_10 {
 		     		
 //--------------------------------------------------          
 			            		
-		lv.yu.jav.JAV_10_tabs.frame.setVisible(true); 
+        lv.yu.jav.JAV_10_tabs.frame.setVisible(true); 
 
     }  //  end JAV_lang_visualize_10()
    
