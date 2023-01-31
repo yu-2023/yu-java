@@ -76,7 +76,7 @@ public class JAV_help_visualize_10 {
         
 //--------------------------------------------------          
 			            		
-		lv.yu.jav.JAV_10_tabs.frame.setVisible(true); 
+        lv.yu.jav.JAV_10_tabs.frame.setVisible(true); 
 
     }  //  end JAV_help_visualize_10()
    
