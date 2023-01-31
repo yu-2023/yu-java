@@ -25,7 +25,7 @@ public final class JAV_load_23_10 {
 /**
  * JTabbedPane_load_23
  */
-	public static JTabbedPane JTabbedPane_load_23 = new JTabbedPane();
+    public static JTabbedPane JTabbedPane_load_23 = new JTabbedPane();
 
 /**
  * JInternalFrame_load_23
