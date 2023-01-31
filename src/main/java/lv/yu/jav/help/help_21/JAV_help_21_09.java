@@ -25,7 +25,7 @@ public final class JAV_help_21_09 {
 /**
  * JTabbedPane_help_21
  */
-	public static JTabbedPane JTabbedPane_help_21 = new JTabbedPane();
+    public static JTabbedPane JTabbedPane_help_21 = new JTabbedPane();
 
 /**
  * JInternalFrame_help_21
