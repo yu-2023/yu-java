@@ -3,7 +3,7 @@
  * 
  * Java package     lv.yu.jav.help
  * 
- * Java program     JAV_help_menu_help_08.java     Apache License 2.0
+ * Java program     JAV_help_menu_help_09.java     Apache License 2.0
  *      
  * Copyright (c)    Yuri Utkin 2023                mob.+371 12345678     https://www.jago.lv
  * 
@@ -19,14 +19,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * JAV_help_menu_help_08
+ * JAV_help_menu_help_09
  */
-public class JAV_help_menu_help_08 {
+public class JAV_help_menu_help_09 {
 	
 /**
- * JAV_help_menu_help_08()
+ * JAV_help_menu_help_09()
  */
-    public JAV_help_menu_help_08() {
+    public JAV_help_menu_help_09() {
 
 //------------------------------
     	
@@ -52,22 +52,22 @@ public class JAV_help_menu_help_08 {
               public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );              
               
           item_Help.addActionListener(new ActionListener() {
-              public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+              public void actionPerformed(ActionEvent e) { new lv.yu.jav.help.JAV_help_visualize_09(); } } );
 
           item_About.addActionListener(new ActionListener() {
            	  public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
   
 //------------------------------
-
+              
             menu_Help.add(item_Information);
             menu_Help.add(item_Help);            
             menu_Help.add(item_About);
             
-            lv.yu.jav.JAV_08_internal_frames.menubar.add(menu_Help);       
+            lv.yu.jav.JAV_09_internal_frames_change.menubar.add(menu_Help);       
             
 //------------------------------
 
-    }  //  end JAV_help_menu_help_08()
+    }  //  end JAV_help_menu_help_09()
    
-}  //  end JAV_help_menu_help_08
+}  //  end JAV_help_menu_help_09
 
