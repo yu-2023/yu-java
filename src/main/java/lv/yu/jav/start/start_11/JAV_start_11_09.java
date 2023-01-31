@@ -3,7 +3,7 @@
  * 
  * Java package     lv.yu.jav.start.start_11
  * 
- * Java program     JAV_start_11_08.java     Apache License 2.0
+ * Java program     JAV_start_11_09.java     Apache License 2.0
  *      
  * Copyright (c)    Yuri Utkin 2023          mob.+371 12345678     https://www.jago.lv
  * 
@@ -18,24 +18,24 @@ import javax.swing.SwingConstants;
 import javax.swing.JInternalFrame;
 
 /**
- * JAV_start_11_08
+ * JAV_start_11_09
  */
-public final class JAV_start_11_08 {
+public final class JAV_start_11_09 {
 
 /**
  * JTabbedPane_start_11
  */
-    public static JTabbedPane JTabbedPane_start_11 = new JTabbedPane();
+	public static JTabbedPane JTabbedPane_start_11 = new JTabbedPane();
 
 /**
  * JInternalFrame_start_11
  */
     public static JInternalFrame JInternalFrame_start_11 = new JInternalFrame();
-           
+
 /**
- * JAV_start_11_08()
+ * JAV_start_11_09()
  */
-    public JAV_start_11_08() { 
+    public JAV_start_11_09() { 
     	
     	JTabbedPane_start_11 = new JTabbedPane();
     	JTabbedPane_start_11.removeAll();
@@ -50,6 +50,6 @@ public final class JAV_start_11_08 {
         
         JInternalFrame_start_11.add(JTabbedPane_start_11, BorderLayout.CENTER);  
         
-    }  //  end JAV_start_11_08()
+    }  //  end JAV_start_11_09()
    
-}  //  end JAV_start_11_08
+}  //  end JAV_start_11_09

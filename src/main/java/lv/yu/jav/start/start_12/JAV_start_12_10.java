@@ -3,7 +3,7 @@
  * 
  * Java package     lv.yu.jav.start.start_12
  * 
- * Java program     JAV_start_12_08.java     Apache License 2.0
+ * Java program     JAV_start_12_10.java     Apache License 2.0
  *      
  * Copyright (c)    Yuri Utkin 2023          mob.+371 12345678     https://www.jago.lv
  * 
@@ -18,28 +18,31 @@ import javax.swing.SwingConstants;
 import javax.swing.JInternalFrame;
 
 /**
- * JAV_start_12_08
+ * JAV_start_12_10
  */
-public final class JAV_start_12_08 {
+public final class JAV_start_12_10 {
 	
 /**
  * JTabbedPane_start_12
  */
-    public static JTabbedPane JTabbedPane_start_12 = new JTabbedPane();
-
+	public static JTabbedPane JTabbedPane_start_12 = new JTabbedPane();
+	
 /**
  * JInternalFrame_start_12
  */
     public static JInternalFrame JInternalFrame_start_12 = new JInternalFrame();
            
 /**
- * JAV_start_12_08()
+ * JAV_start_12_10()
  */
-    public JAV_start_12_08() { 
-                              
+    public JAV_start_12_10() { 
+                                
     	JTabbedPane_start_12 = new JTabbedPane();
     	JTabbedPane_start_12.removeAll();
     	
+        new JAV_start_12_about_10();
+        new JAV_start_12_help_10();
+
         JTabbedPane_start_12.setTabPlacement(SwingConstants.BOTTOM);
         JTabbedPane_start_12.setTabLayoutPolicy(JTabbedPane_start_12.SCROLL_TAB_LAYOUT);
         
@@ -50,6 +53,6 @@ public final class JAV_start_12_08 {
         
         JInternalFrame_start_12.add(JTabbedPane_start_12, BorderLayout.CENTER);
                
-    }  //  end JAV_start_12_08()
+    }  //  end JAV_start_12_10()
    
-}  //  end JAV_start_12_08
+}  //  end JAV_start_12_10
