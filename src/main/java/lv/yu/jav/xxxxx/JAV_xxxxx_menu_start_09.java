@@ -19,14 +19,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * JAV_xxxxx_menu_start_08
+ * JAV_xxxxx_menu_start_09
  */
-public class JAV_xxxxx_menu_start_08 {
+public class JAV_xxxxx_menu_start_09 {
 	
 /**
- * JAV_xxxxx_menu_start_08()
+ * JAV_xxxxx_menu_start_09()
  */
-    public JAV_xxxxx_menu_start_08() {
+    public JAV_xxxxx_menu_start_09() {
 
 //------------------------------
     	
@@ -37,20 +37,20 @@ public class JAV_xxxxx_menu_start_08 {
       var item_Xxxx = new JMenuItem("Xxxx", icon_Xxxx);
           item_Xxxx.setToolTipText("Xxxx application");
           item_Xxxx.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.ALT_MASK));   //  Alt X  
-          
+ 
 //------------------------------
-          
+            
           item_Xxxx.addActionListener(new ActionListener() {
-              public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+	          public void actionPerformed(ActionEvent e) { new lv.yu.jav.xxxxx.JAV_xxxxx_visualize_09(); } } );
 
 //------------------------------
             
-        lv.yu.jav.start.JAV_start_menu_08.menu_Menu.add(item_Xxxx);
+        lv.yu.jav.start.JAV_start_menu_09.menu_Menu.add(item_Xxxx);
 
-        lv.yu.jav.JAV_08_internal_frames.menubar.add(lv.yu.jav.start.JAV_start_menu_08.menu_Menu);
+        lv.yu.jav.JAV_09_internal_frames_change.menubar.add(lv.yu.jav.start.JAV_start_menu_09.menu_Menu);
        
 //------------------------------
             
-    }  //  end JAV_xxxxx_menu_start_08()
+    }  //  end JAV_xxxxx_menu_start_09()
    
-}  //  end JAV_xxxxx_menu_start_08
+}  //  end JAV_xxxxx_menu_start_09
