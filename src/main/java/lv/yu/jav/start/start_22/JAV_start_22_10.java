@@ -25,7 +25,7 @@ public final class JAV_start_22_10 {
 /**
  * JTabbedPane_start_22
  */
-	public static JTabbedPane JTabbedPane_start_22 = new JTabbedPane();
+    public static JTabbedPane JTabbedPane_start_22 = new JTabbedPane();
 
 /**
  * JInternalFrame_start_22
