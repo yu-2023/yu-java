@@ -32,9 +32,9 @@ public class JAV_xxxxx_09 {
         
     new lv.yu.jav.help.JAV_help_menu_help_09();
     new lv.yu.jav.lang.JAV_lang_menu_lang_09();
-	new lv.yu.jav.exit.JAV_exit_menu_exit_09();
+    new lv.yu.jav.exit.JAV_exit_menu_exit_09();
 	
-	lv.yu.jav.JAV_09_internal_frames_change.frame.setJMenuBar(lv.yu.jav.JAV_09_internal_frames_change.menubar);
+    lv.yu.jav.JAV_09_internal_frames_change.frame.setJMenuBar(lv.yu.jav.JAV_09_internal_frames_change.menubar);
 		
       }  //  end JAV_xxxxx_09()
         
