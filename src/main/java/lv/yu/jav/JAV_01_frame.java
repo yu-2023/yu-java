@@ -21,8 +21,8 @@ import java.awt.EventQueue;
 /** JAV_01_frame */
 public final class JAV_01_frame {
 	
-    /** frame */
-    public static JFrame frame = new JFrame();	
+/** frame */
+public static JFrame frame = new JFrame();	
 	
 //------------------------------
         
