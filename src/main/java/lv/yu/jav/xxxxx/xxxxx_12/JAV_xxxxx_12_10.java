@@ -25,7 +25,7 @@ public final class JAV_xxxxx_12_10 {
 /**
  * JTabbedPane_xxxxx_12
  */
-	public static JTabbedPane JTabbedPane_xxxxx_12 = new JTabbedPane();
+    public static JTabbedPane JTabbedPane_xxxxx_12 = new JTabbedPane();
 
 /**
  * JInternalFrame_xxxxx_12
@@ -41,7 +41,7 @@ public final class JAV_xxxxx_12_10 {
     	JTabbedPane_xxxxx_12.removeAll();
     	
         new JAV_xxxxx_12_about_10();
-	    new JAV_xxxxx_12_help_10();
+        new JAV_xxxxx_12_help_10();
 
         JTabbedPane_xxxxx_12.setTabPlacement(SwingConstants.BOTTOM);
         JTabbedPane_xxxxx_12.setTabLayoutPolicy(JTabbedPane_xxxxx_12.SCROLL_TAB_LAYOUT);
