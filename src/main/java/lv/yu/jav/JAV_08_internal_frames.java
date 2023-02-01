@@ -73,7 +73,7 @@ public JAV_08_internal_frames() {
 
 //------------------------------            
     	
-        var title = "JAVA -- JAV_08_internal_frames -- v. 2023.01.01";
+    var title = "JAVA -- JAV_08_internal_frames -- v. 2023.01.01";
             
         frame.setTitle("     " + title);
         
