@@ -73,7 +73,7 @@ public JAV_10_tabs() {
 
 //------------------------------            
     	
-        var title = "JAVA -- JAV_10_tabs -- v. 2023.01.01";
+    var title = "JAVA -- JAV_10_tabs -- v. 2023.01.01";
             
         frame.setTitle("     " + title);
         
