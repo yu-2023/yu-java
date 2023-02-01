@@ -23,8 +23,8 @@ import java.awt.EventQueue;
 /** JAV_02_text */
 public final class JAV_02_text {
 	
-    /** frame */
-    public static JFrame frame = new JFrame();
+/** frame */
+public static JFrame frame = new JFrame();
 	
 //------------------------------
   
