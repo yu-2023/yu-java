@@ -100,7 +100,7 @@ public JAV_07_internal_frame_six() {
 
 //------------------------------            
     	
-        var title = "JAVA -- JAV_07_internal_frame_six -- v. 2023.01.01";
+    var title = "JAVA -- JAV_07_internal_frame_six -- v. 2023.01.01";
 
         frame.setTitle("     " + title);
         
@@ -208,46 +208,46 @@ public JAV_07_internal_frame_six() {
                  public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_Load.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_Xxxx.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_St11.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_St12.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_St21.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_St22.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_St31.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_St32.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
      
           item_Information.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );        
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );        
         
           item_Help.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
 
           item_About.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
 
           item_Eng.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );        
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );        
         
           item_Rus.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
           
           item_Lat.addActionListener(new ActionListener() {
-    			 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
+                 public void actionPerformed(ActionEvent e) { System.out.println("Selected menu: " + e.getActionCommand()); } } );
         
           item_Exit.addActionListener((event) -> System.exit(0));
         
