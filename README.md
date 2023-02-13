@@ -9,7 +9,7 @@ How to Program Java
   
 <table border="0">
   <tr>
-    <td><a href="https://yu-2023.github.io/yu-java" target="_self"><img src="screen/JAV_10_tabs.jpg"></a></td>
+    <td><a href="https://yu-2023.github.io/yu-java" target="_parent"><img src="screen/JAV_10_tabs.jpg"></a></td>
   </tr>
 </table>
 
