@@ -18,12 +18,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 /**
- * JAV_help_menu_help_1_10
+ * JAV_help_menu_help_2_10
  */
 public class JAV_help_menu_help_2_10 {
 	
 /**
- * JAV_help_menu_help_1_10()
+ * JAV_help_menu_help_2_10()
  */
     public JAV_help_menu_help_2_10() {
 
