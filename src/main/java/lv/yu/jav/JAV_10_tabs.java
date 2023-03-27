@@ -5,7 +5,7 @@
  * 
  * Java program     JAV_10_tabs.java     Apache License 2.0
  *      
- * Copyright (c)    Yuri Utkin 2022      mob.+371 12345678     https://www.jago.lv
+ * @author Copyright (c)    Yuri Utkin 2023      mob.+371 12345678     https://www.jago.lv
  * 
  */
 package lv.yu.jav;
@@ -22,10 +22,19 @@ import java.awt.Dimension;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 //------------------------------
 
+@WebServlet("/jav10tabs")
 /** JAV_10_tabs */
-public final class JAV_10_tabs {
+public final class JAV_10_tabs extends HttpServlet {
     		
     /** frame */
     public static JFrame frame = new JFrame();
@@ -62,6 +71,39 @@ public final class JAV_10_tabs {
     
     /** desktoppane_23 */
     public static JDesktopPane desktoppane_23 = new JDesktopPane();
+
+//------------------------------
+    
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws IOException, ServletException { 
+	   
+	      // Set the response message's MIME type
+	      response.setContentType("text/html;charset=UTF-8");
+	      // Allocate a output writer to write the response message into the network socket
+	      PrintWriter out = response.getWriter();
+	 
+	      // Write the response message, in an HTML page
+	      try {
+	         out.println("<!DOCTYPE html>");
+	         out.println("<html><head>");
+	         out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
+	         out.println("<title>JAV_10_tabs</title></head>");
+	         out.println("<body>");
+	         out.println("<h1>= JAV_10_tabs =</h1>");  // says Hello
+	         // Echo client's request information
+	         out.println("<p>Request URI: " + request.getRequestURI() + "</p>");
+	         out.println("<p>Protocol: " + request.getProtocol() + "</p>");
+	         out.println("<p>PathInfo: " + request.getPathInfo() + "</p>");
+	         out.println("<p>Remote Address: " + request.getRemoteAddr() + "</p>");
+	         // Generate a random number upon each request
+//	         out.println("<p>A Random Number: <strong>" + Math.random() + "</strong></p>");
+	         out.println("</body>");
+	         out.println("</html>");
+	      } finally {
+	         out.close();  // Always close the output writer
+	      }
+	   
+}
 
 //------------------------------
     

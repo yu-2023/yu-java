@@ -5,7 +5,7 @@
  * 
  * Java program     JAV_09_internal_frames_change.java     Apache License 2.0
  *      
- * Copyright (c)    Yuri Utkin 2022                        mob.+371 12345678     https://www.jago.lv
+ * Copyright (c)    Yuri Utkin 2023                        mob.+371 12345678     https://www.jago.lv
  * 
  */
 package lv.yu.jav;
