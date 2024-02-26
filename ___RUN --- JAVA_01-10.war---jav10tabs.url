@@ -1,8 +1,0 @@
-[DEFAULT]
-BASEURL=http://localhost:8080/GRADLE_KOTLIN/ProcessController
-[{000214A0-0000-0000-C000-000000000046}]
-Prop3=19,2
-[InternetShortcut]
-IDList=
-URL=http://localhost:8080/JAVA_01-10/jav10tabs
-HotKey=0
